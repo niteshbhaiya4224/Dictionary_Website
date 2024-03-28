@@ -1,0 +1,78 @@
+body{
+  min-width: 300px;
+  min-height: 400px;
+  background-color: #32313e;
+  padding-top: 20px;
+}
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-container input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+.search-container input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-container input[type="submit"]:hover {
+  background-color: #218838;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dictionary-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #e66969;
+  border-radius: 5px;
+  background-color: white;
+}
+.git-icon{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #eee 2px 3px 10px;
+  z-index: 2;
+}
+
+.git-icon img{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.git-icon:hover{
+  background-color: #DDD;
+  box-shadow: #eee 3px 5px 10px;
+}
+
+@media (max-width: 992px) {
+  .dictionary-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (max-width: 576px) {
+  .dictionary-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
